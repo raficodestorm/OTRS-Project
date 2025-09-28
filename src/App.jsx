@@ -9,6 +9,7 @@ import AddBranch from "./pages/Addbranch";
 import AllBranches from "./pages/Allbranches";
 import BookingManagement from "./pages/Booked";
 import UserManagement from "./pages/Usermanage";
+import LoginPage from "./pages/Login";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/Allbranches" element={<AllBranches />} />
             <Route path="/Booked" element={<BookingManagement />} />
             <Route path="/Usermanage" element={<UserManagement />} />
+            <Route path="/Login" element={<LoginPage />} />
           </Routes>
         </div>
       </main>
