@@ -1,0 +1,397 @@
+/* =================== style for busEntry =================== */
+.bus-entry-page {
+    padding: 20px;
+    max-width: 900px; /* Max width for the form on large screens */
+    margin: 0 auto; /* Center the content */
+}
+
+.bus-entry-page h1 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    
+}
+
+.bus-entry-form-container {
+    background-color: #fffffc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Add custom styles for inputs/buttons if you aren't using a framework */
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #780116;
+}
+.thb {
+  background-color: #ff0000 !important;
+  color: white;
+}
+
+/* =================== style for addbranch =================== */
+.add-branch-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fffffc; /* container background */
+  color: #220901; /* text color */
+}
+
+.add-branch-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-branch-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-branch-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.add-branch-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff0000; /* main color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #780116; /* button hover color */
+}
+
+/* =================== style for allbranches =================== */
+.all-branches-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fffffc; /* container background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #220901; /* text color */
+}
+
+.all-branches-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #220901;
+}
+
+.branches-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.branches-table thead {
+  background-color: #ff0000; /* main color */
+  color: white;
+}
+
+.branches-table th,
+.branches-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.branches-table tbody tr:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.edit-btn {
+  background-color: #ff0000; /* main color */
+}
+
+.edit-btn:hover {
+  background-color: #780116; /* button hover */
+}
+
+.delete-btn {
+  background-color: #220901; /* dark text color as button */
+}
+
+.delete-btn:hover {
+  background-color: #780116; /* hover effect */
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* =================== style for booking management =================== */
+.booking-management-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fffffc; /* container bg */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #220901; /* text color */
+}
+
+.booking-management-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #220901;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.booking-table thead {
+  background-color: #ff0000; /* main color */
+  color: white;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table tbody tr:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.booking-table select {
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.cancel-btn,
+.refund-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.cancel-btn {
+  background-color: #ff0000;
+}
+
+.cancel-btn:hover {
+  background-color: #780116;
+}
+
+.refund-btn {
+  background-color: #220901;
+}
+
+.refund-btn:hover {
+  background-color: #780116;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* =================== style for User management =================== */
+.user-management-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fffffc; /* container background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #220901; /* text color */
+}
+
+.user-management-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #220901;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table thead {
+  background-color: #ff0000; /* main color */
+  color: white;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table tbody tr:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.status-btn.block {
+  background-color: #ff0000; /* main color */
+}
+
+.status-btn.block:hover {
+  background-color: #780116; /* hover */
+}
+
+.status-btn.unblock {
+  background-color: #220901;
+}
+
+.status-btn.unblock:hover {
+  background-color: #780116;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* =================== style for sale chart =================== */
+.chart-container {
+  background-color: #fffffc; /* container background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #220901; /* text color */
+  font-weight: bold;
+}
+.graph{
+  background-color: #fffffc;
+  border: 0.5px solid #ff0000;
+  border-radius: 1rem;
+}
+
+/* =================== style for Top saler branch =================== */
+.top-saler-container {
+  background-color: #fffffc; /* container background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-saler-table-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #220901; /* text color */
+}
+
+.top-saler-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff0000; /* main color border */
+  object-fit: cover;
+}
+
+.top-saler-text-main {
+  color: #ff0000; /* highlight sales *
+}
+
+.top-saler-table thead th {
+  background-color: #ff0000; /* main color */
+  color: #fff;
+  text-align: center;
+}
