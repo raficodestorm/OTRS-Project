@@ -1,37 +1,32 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import Dashboard from "./pages/Dashboard";
-import BusEntry from "./pages/BusEntry";
-import Buses from "./pages/Allbuses";
-import AddBranch from "./pages/Addbranch";
-import AllBranches from "./pages/Allbranches";
-import BookingManagement from "./pages/Booked";
-import UserManagement from "./pages/Usermanage";
-import LoginPage from "./pages/Login";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Dashboard from "./pages/Admin/Dashboard"
+import BusEntry from "./pages/Admin/BusEntry";
+import Buses from "./pages/Admin/Allbuses";
+import AddBranch from "./pages/Admin/Addbranch";
+import AllBranches from "./pages/Admin/Allbranches";
+import BookingManagement from "./pages/Admin/Booked";
+import UserManagement from "./pages/Admin/Usermanage";
+import LoginPage from "./pages/Admin/Login";
+import MasterAdmin from "./layout/MasterAdmin";
 
 
 function App() {
   return (
-    <div className="d-flex">
-      <Sidebar />
-      <main style={{ flex: 1 }}>
-        <Header />
-        <div className="container-fluid mt-3">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/Busentry" element={<BusEntry />} />
-            <Route path="/Allbuses" element={<Buses />} />
-            <Route path="/Addbranch" element={<AddBranch />} />
-            <Route path="/Allbranches" element={<AllBranches />} />
-            <Route path="/Booked" element={<BookingManagement />} />
-            <Route path="/Usermanage" element={<UserManagement />} />
-            <Route path="/Login" element={<LoginPage />} />
+            <Route path="/" element={< Navigate to="/Admin/Dashboard" replace/>} />
+
+            <Route path="/Admin/*" element={<MasterAdmin/>}>
+              <Route path="Dashboard" element={<Dashboard />} />
+              <Route path="Busentry" element={<BusEntry />} />
+              <Route path="Allbuses" element={<Buses />} />
+              <Route path="Addbranch" element={<AddBranch />} />
+              <Route path="Allbranches" element={<AllBranches />} />
+              <Route path="Booked" element={<BookingManagement />} />
+              <Route path="Usermanage" element={<UserManagement />} />
+              <Route path="Login" element={<LoginPage />} />
+            </Route>
           </Routes>
-        </div>
-      </main>
-    </div>
   );
 }
 
