@@ -25,8 +25,8 @@ const UserNavbar = () => {
   };
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#fffef5c9" }} className="shadow-sm">
-      <Container fluid>
+    <Navbar expand="lg" sticky="top" style={{ backgroundColor: "#fffef5c9" }} className="shadow-sm ">
+      <Container fluid className="usernavbar">
         {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="text-logo ">
           <img
@@ -35,8 +35,7 @@ const UserNavbar = () => {
             width="35"
             height="35"
             className="d-inline-block align-top me-2"
-          />
-          Ranar Bus
+          /> <span className="runstar">RunStar</span>
         </Navbar.Brand>
 
         {/* Toggle button (for mobile view) */}
@@ -65,13 +64,13 @@ const UserNavbar = () => {
 
           {/* Menu + Profile */}
           <Nav className="ms-auto align-items-center">
-            <Nav.Link as={Link} to="/user/bookings" className="text-white fw-semibold me-3">
+            <Nav.Link as={Link} to="/user/bookings" className="text-menu fw-semibold me-3">
               My Bookings
             </Nav.Link>
-            <Nav.Link as={Link} to="/user/offers" className="text-white fw-semibold me-3">
+            <Nav.Link as={Link} to="/user/offers" className="text-menu fw-semibold me-3">
               Offers
             </Nav.Link>
-            <Nav.Link as={Link} to="/user/support" className="text-white fw-semibold me-3">
+            <Nav.Link as={Link} to="/user/support" className="text-menu fw-semibold me-3">
               Support
             </Nav.Link>
 

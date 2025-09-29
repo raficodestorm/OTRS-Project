@@ -7,9 +7,20 @@
     --text-color: #220901;
     --light-hover: #ff0101ca;
 }
-.text-logo{
+.shadow-sm{
+    position: sticky;
+}
+.runstar{
     color: var(--main-color);
     font-size: x-large;
     font-weight: 700;
     padding-top: 10px;
+}
+.text-menu{
+    color: var(--main-color) !important;
+}
+.text-menu:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color) !important;
+    border-radius: 5px;
 }
