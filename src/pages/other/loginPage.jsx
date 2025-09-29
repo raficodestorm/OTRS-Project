@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Admins.css"; // custom styles
+import "../admin/Admins.css"; // custom styles
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });

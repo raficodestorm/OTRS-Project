@@ -1,0 +1,15 @@
+/* ------------------User Nav style--------------------- */
+:root{
+    --main-color: #ff0000;
+    --second-color: #780116;
+    --bg-color: #fffffc;
+    --back-color: #edf6f9af;
+    --text-color: #220901;
+    --light-hover: #ff0101ca;
+}
+.text-logo{
+    color: var(--main-color);
+    font-size: x-large;
+    font-weight: 700;
+    padding-top: 10px;
+}

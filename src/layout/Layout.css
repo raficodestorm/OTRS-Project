@@ -1,0 +1,10 @@
+/* ------------------User Portal style------------------- */
+.master-background {
+  background-image: url("/assests/image/bus-2.png"); /* change path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
