@@ -1,6 +1,7 @@
 // src/pages/SearchResults.js
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const dummyBuses = [
   {
@@ -148,9 +149,11 @@ const SearchResults = () => {
                       <td>{bus.seats}</td>
                       <td>{bus.price}</td>
                       <td>
+                      <Link to="/SeatReservation">
                         <button className="btn btn-sm btn-outline-danger rounded-3">
                           Book Now
                         </button>
+                        </Link>
                       </td>
                     </tr>
                   ))}

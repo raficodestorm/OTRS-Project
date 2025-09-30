@@ -1,0 +1,93 @@
+/* =================== google-font-Roboto & Ek-mesirri =================== */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "El Messiri", sans-serif; */
+:root{
+    --main-color: #ff0000;
+    --second-color: #780116;
+    --bg-color: #fffffc;
+    --back-color: #edf6f9af;
+    --text-color: #220901;
+    --light-hover: #ff0101ca;
+}
+
+/* ===========================
+   Login Page Styling
+   =========================== */
+
+   .login-page {
+    min-height: 100vh;
+    max-width: 100%;
+    background: url("/assests/image/bus-bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+  }
+  
+  /* Background Image */
+  
+  
+  /* Login Card */
+  .login-card {
+    z-index: 1;
+    width: 100%;
+    max-width: 420px;
+    padding: 1rem;
+    margin-left: 5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.507);
+    background: #ffffff38; /* subtle transparency */
+    backdrop-filter: blur(6px); /* glass effect */
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  /* Title */
+  .login-card h2 {
+    font-size: 1.8rem;
+    font-family: "El Messiri", sans-serif;
+    color: var(--main-color);
+  }
+  .form-label {
+    color: var(--main-color) !important;
+  }
+  /* Form Inputs */
+  .login-card .form-control {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    background-color: #ffffff3a;
+    transition: all 0.3s ease;
+  }
+  
+  .login-card .form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 8px rgba(253, 101, 13, 0.336);
+  }
+  
+  /* Button */
+  .login-card .btn {
+    margin-top: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #ff0000, #780116);
+    border: none; 
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .login-card .btn:hover {
+    background: linear-gradient(90deg, #780116, #ff0000);
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

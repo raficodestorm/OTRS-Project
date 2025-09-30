@@ -15,6 +15,7 @@ import UserPortal from "./layout/UserPortal";
 import PopularRoutes from "./pages/user/PopularRoutes";
 import UserFront from "./pages/user/UserFront";
 import SearchResults from "./pages/user/SearchResults";
+import SeatReservation from "./pages/User/SeatReservation";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
             <Route path="/" element={<MasterUser/>}>
               <Route path="/results" element={<SearchResults />} />
+              <Route path="/SeatReservation" element={<SeatReservation />} />
             </Route>
 
             <Route path="/admin/*" element={<MasterAdmin/>}>

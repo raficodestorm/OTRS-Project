@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../admin/Admins.css"; // custom styles
+import "./other.css"; // custom styles
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -15,17 +15,17 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-page d-flex align-items-center justify-content-center">
+    <div className="login-page d-flex align-items-center ">
       {/* Background */}
-      <div className="login-bg">
-        <img src="/assets/image/bus-bg.jpg" alt="Bus Background" />
+      {/* <div className="login-bg">
+        <img src="../assests/image/bus-bg-1.jpg" alt="Bus Background" />
         <div className="login-overlay"></div>
-      </div>
+      </div> */}
 
       {/* Card */}
-      <div className="login-card card shadow-lg">
+      <div className="login-card shadow-lg">
         <div className="card-body">
-          <h2 className="text-center text-primary mb-4 fw-bold">
+          <h2 className="text-center mb-4 fw-bold">
             Bus Reservation System
           </h2>
 
@@ -68,9 +68,9 @@ const LoginPage = () => {
           </form>
 
           {/* Footer */}
-          <p className="text-center text-muted mt-4">
+          <p className="text-center text-white mt-4">
             Don’t have an account?{" "}
-            <a href="/register" className="fw-semibold text-decoration-none text-primary">
+            <a href="/register" className="fw-semibold text-decoration-none text-danger">
               Register
             </a>
           </p>
