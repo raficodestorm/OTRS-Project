@@ -9,24 +9,33 @@ import BookingManagement from "./pages/admin/Booked";
 import UserManagement from "./pages/admin/Usermanage";
 import LoginPage from "./pages/other/loginPage";
 import MasterAdmin from "./layout/MasterAdmin";
+import MasterUser from "./layout/MasterUser";
 import Blank from "./layout/Blank";
 import UserPortal from "./layout/UserPortal";
-import SearchPage from "./pages/user/SearchPageU";
+import PopularRoutes from "./pages/user/PopularRoutes";
+import UserFront from "./pages/user/UserFront";
+import SearchResults from "./pages/user/SearchResults";
 
 
 function App() {
   return (
           <Routes>
-            {/* <Route path="/" element={< Navigate to="/other/loginPage" replace/>} />
+            {/* <Route path="/" element={< Navigate to="/other/loginPage" replace/>} /> */}
             
-            <Route path="/other/*" element={<Blank/>}>
+            {/* <Route path="/other/*" element={<Blank/>}>
               <Route path="loginPage" element={<LoginPage />} />
             </Route> */}
 
-            <Route path="/" element={< Navigate to="/user/SearchPage" replace/>} />
+            <Route path="/other/loginPage" element={<LoginPage />} />
+
+            <Route path="/" element={< Navigate to="/user/UserFront" replace/>} />
             
             <Route path="/user/*" element={<UserPortal/>}>
-              <Route path="SearchPage" element={<SearchPage />} />
+              <Route path="UserFront" element={<UserFront />} />
+            </Route>
+
+            <Route path="/" element={<MasterUser/>}>
+              <Route path="/results" element={<SearchResults />} />
             </Route>
 
             <Route path="/admin/*" element={<MasterAdmin/>}>

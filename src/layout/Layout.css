@@ -29,6 +29,7 @@
 .heading h1{
   color: #fffdf7;
   font-size: 3.3rem;
+  text-align: start;
   font-family: "El Messiri", sans-serif;
   font-weight: bolder;
 }
@@ -36,28 +37,4 @@
   color: #fffdf7;
   font-family: "Roboto", sans-serif;
   font-size: larger;
-}
-.card{
-  background-color: #fffffc75;
-}
-.form-label{
-  color: #070200;
-}
-input.form-control{
-  background-color: #fffffc93;
-  font-size: small;
-}
-input.form-control:focus{
-  background-color: #fffffc93;
-  border: 1px solid var(--main-color);
-  box-shadow: none;
-}
-.bus-src{
-  background: linear-gradient(90deg, #ff0000, #780116);
-  border: none; 
-  color: white;
-}
-.bus-src:hover{
-  background: linear-gradient(90deg, #780116, #ff0000);
-  color: white;
 }

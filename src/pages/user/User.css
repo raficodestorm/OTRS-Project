@@ -1,0 +1,140 @@
+/* =================== google-font-Roboto & Ek-mesirri =================== */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "El Messiri", sans-serif; */
+
+:root{
+    --main-color: #ff0000;
+    --second-color: #780116;
+    --bg-color: #fffffc;
+    --back-color: #edf6f9af;
+    --text-color: #220901;
+    --light-hover: #ff0101ca;
+}
+h1{
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+/* -------------------------style for Popular routes---------------------------- */
+.popular-title {
+  margin-top: 4rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: "El Messiri", sans-serif;
+}
+
+.main-card{
+  background: var(--bg-color);
+  min-height: 110px;
+  border-radius: 12px;
+  border: 1px solid var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+.main-card:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,.35);
+  transform: translateY(-4px);
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.route-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: #ddd;
+  z-index: 0;
+}
+
+.start-icon,
+.end-icon,
+.bus-icon {
+  font-size: 1.4rem;
+  color: #999;
+  z-index: 1;
+}
+.int{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  font-family: "El Messiri", sans-serif;
+  font-size: small;
+  color: #999;
+}
+
+/* -------------------------style for Popular routes---------------------------- */
+.service-col{
+  position: relative; /* container for absolute child */
+}
+.service-card {
+  border-radius: 1rem;
+  overflow: hidden; /* important: hide overflow when image scales */
+}
+
+.service-img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* smooth zoom */
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.1); /* zoom in image */
+}
+
+.service-ins {
+  width: 25rem;
+  text-align: center;
+  height: auto;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -5%;
+  left: 7rem;
+  right: auto;
+  background: var(--bg-color);
+  padding: 1rem;
+  border: 1px solid var(--main-color);
+  z-index: 10;
+  color: #220901;
+  box-shadow: 0 10px 20px rgba(248, 40, 40, 0.317);
+}
+
+
+
+
+
+.card{
+  background-color: #fffffc75;
+}
+.form-label{
+  color: #070200;
+}
+input.form-control{
+  background-color: #fffffc93;
+  font-size: small;
+}
+input.form-control:focus{
+  background-color: #fffffc93;
+  border: 1px solid var(--main-color);
+  box-shadow: none;
+}
+.bus-src{
+  background: linear-gradient(90deg, #ff0000, #780116);
+  border: none; 
+  color: white;
+}
+.bus-src:hover{
+  background: linear-gradient(90deg, #780116, #ff0000);
+  color: white;
+}

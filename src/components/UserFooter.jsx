@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const UserFooter = () => {
   return (
-    <footer style={{ backgroundColor: "#0000F5" }} className="text-light pt-5 pb-3 mt-5 shadow-lg">
+    <footer style={{ backgroundColor: "#4a000eff"}} className="text-light pt-5 pb-3 mt-5 shadow-lg">
       <Container>
         <Row className="gy-4">
           {/* Logo + About */}

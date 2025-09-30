@@ -82,7 +82,7 @@ const UserNavbar = () => {
                 className="d-flex align-items-center rounded-pill px-2 py-1"
               >
                 <img
-                  src="https://i.pravatar.cc/40" // replace with user profile
+                  src="/assests/image/rafi33.jpg" // replace with user profile
                   alt="Profile"
                   className="rounded-circle me-2"
                   style={{ width: "32px", height: "32px", objectFit: "cover" }}
@@ -100,7 +100,11 @@ const UserNavbar = () => {
                   Settings
                 </Dropdown.Item>
                 <Dropdown.Divider />
-                <Dropdown.Item as={Link} to="/user/loginPage" className="text-danger">
+                <Dropdown.Item as={Link} to="/other/loginPage" className="text-danger">
+                  Login
+                </Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item as={Link} to="/" className="text-danger">
                   Logout
                 </Dropdown.Item>
               </Dropdown.Menu>
