@@ -11,11 +11,18 @@
     --text-color: #220901;
     --light-hover: #ff0101ca;
 }
+*{
+  font-family: "Roboto", sans-serif;
+}
 h1{
   font-family: "El Messiri", sans-serif;
   text-align: center;
   font-weight: 700;
   margin-top: 4rem;
+}
+h2,h3,h4,h5{
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
 }
 /* -------------------------style for Popular routes---------------------------- */
 .popular-title {
@@ -72,14 +79,24 @@ h1{
   font-size: small;
   color: #999;
 }
+@media (max-width: 768px) {
+  .p-routes{
+    padding-top: 11rem ;
+  }
+  .popular-title {
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+}
 
-/* -------------------------style for Popular routes---------------------------- */
+/* -------------------------style for services---------------------------- */
 .service-col{
-  position: relative; /* container for absolute child */
+  position: relative;
 }
 .service-card {
   border-radius: 1rem;
-  overflow: hidden; /* important: hide overflow when image scales */
+  overflow: hidden; 
 }
 
 .service-img {
@@ -94,13 +111,13 @@ h1{
 }
 
 .service-ins {
-  width: 25rem;
+  width: 70%;
   text-align: center;
   height: auto;
   border-radius: 1rem;
   position: absolute;
   bottom: -5%;
-  left: 7rem;
+  left: 15%;
   right: auto;
   background: var(--bg-color);
   padding: 1rem;
@@ -117,7 +134,7 @@ h1{
   background-color: #fffffc75;
 }
 .form-label{
-  color: #070200;
+  color: #070200 !important;
 }
 input.form-control{
   background-color: #fffffc93;
@@ -132,6 +149,12 @@ input.form-control:focus{
   background: linear-gradient(90deg, #ff0000, #780116);
   border: none; 
   color: white;
+  animation: wiggl 1s ease-in-out infinite;
+}
+@keyframes wiggl {
+  0%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  100%  { transform: translateX(-3px); }
 }
 .bus-src:hover{
   background: linear-gradient(90deg, #780116, #ff0000);
@@ -139,104 +162,124 @@ input.form-control:focus{
 }
 
 /* -------------------------style for Seat Reservation---------------------------- */
-.seat-reservation-container {
-  padding: 20px;
-  border: 1px solid #ddd;
+.seat-reservation {
+  margin-top: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.854) !important;
 }
 
 .legend {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  justify-content: center;
+  gap: 2rem;
+  margin: .5rem 0 1rem 0;
 }
 
 .legend .seat {
-  padding: 5px 10px;
+  text-align: center;
+  line-height: 1rem;
   border-radius: 4px;
   font-size: 12px;
   cursor: default;
+  height: 45px;
+  width: 55px;
 }
 
-.seat.booked { background: #a64ca6; color: white; }   /* purple */
-.seat.blocked { background: #333; color: white; }
-.seat.available { background: #eee; color: #333; }
-.seat.selected { background: #4CAF50; color: white; } /* green */
-.seat.soldM { background: #e53935; color: white; }    /* red */
-.seat.soldF { background: #f06292; color: white; }    /* pink */
+.seat.blocked { background: #333; color: white; border: .5px solid var(--main-color);}
+.seat.available { background: #fffffc; color: #333; border: .5px solid var(--main-color); }
+.seat.selected { background: #4CAF50; color: white; border: .5px solid var(--main-color);} /* green */
+.seat.soldM { background: #ff0000; color: white; border: .5px solid var(--main-color);}    /* red */
+.seat.soldF { background: #ff2ecc; color: white; border: .5px solid var(--main-color);}    /* pink */
 
-.seat-layout {
-  display: flex;
-  gap: 20px;
-}
-
-.seats-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 50px);
-  gap: 10px;
-}
-
-.seats-grid .seat {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  cursor: pointer;
-}
 
 .reservation-form {
-  flex: 1;
+  margin-top: 4.4rem;
+  margin-right: 4rem;
 }
-
 .reservation-form select,
 .reservation-form input {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 8px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  border: .5px solid var(--light-hover);
 }
-
+/* .reservation-form select, */
+input:focus{
+  border: none;
+}
 .submit-btn {
   width: 100%;
-  background: red;
+  background: linear-gradient(90deg, #ff0000, #780116);
   color: white;
   padding: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  animation: wiggle 1s ease-in-out infinite;
 }
 
+/* Wiggle animation */
+@keyframes wiggle {
+  0%  { transform: translateX(-3px); background: linear-gradient(90deg, #ff0000, #780116);}
+  50%  { transform: translateX(3px); background: linear-gradient(90deg, #780116, #ff0000);}
+  100%  { transform: translateX(-3px); background: linear-gradient(90deg, #ff0000, #780116);}
+}
 
+/* Apply on hover */
+.submit-btn:hover {
+  box-shadow: 0 0 10px var(--main-color);
+}
 
 .bus-container {
   width: 350px;
-  margin: 20px auto;
+  margin: auto;
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 10px;
-  background: #f9f9f9;
+  background: var(--bg-color);
 }
 
 .bus-front {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin:0 20px 20px 20px;
 }
 
 .driver {
-  background: orange;
-  color: white;
   font-weight: bold;
-  padding: 10px;
-  border-radius: 6px;
   width: 60px;
   text-align: center;
 }
 
+.driver svg {
+  font-size: 40px;
+  animation: steering-spin 2s linear infinite, fill-change 3s ease-in-out infinite;
+}
+
+/* Spin animation */
+@keyframes steering-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animate fill color */
+@keyframes fill-change {
+  0%   { fill: red; }
+  25%  { fill: blue; }
+  50%  { fill: #780116; }
+  75%  { fill: green; }
+  100% { fill: red; }
+}
+
 .door {
-  background: gray;
-  color: white;
+  color: gray;
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
@@ -260,12 +303,12 @@ input.form-control:focus{
 .seat {
   width: 50px;
   height: 50px;
-  background: #4da6ff;
-  color: white;
+  color: var(--second-color);
   font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1.5px solid var(--main-color);
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s;
@@ -289,3 +332,47 @@ input.form-control:focus{
   border-top: 1px solid #ccc;
   text-align: center;
 }
+
+/* -------------------------style for ticket---------------------------- */
+.ticket-card {
+  border: 2px solid var(--main-color);
+  background: white;
+}
+
+.section-title {
+  background: var(--main-color);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.table {
+  margin-bottom: 0;
+  background: #fdfdfd;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .table td {
+  vertical-align: middle;
+  font-size: 0.7rem;
+  padding: .1rem .5rem;
+}
+.ticket-header p{
+  font-size: small;
+  line-height: 0;
+}
+.instruction{
+  font-size: smaller;
+  text-align: center;
+}
+}
+
+
+
+/* -------------------------style for  ---------------------------- */

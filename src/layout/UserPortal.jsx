@@ -16,7 +16,9 @@ function UserPortal() {
               <p>Book fast, Ride easy and cheer!</p>
             </div>
           </div>
-          <div className="col-md-4 p-5">
+          <div className="col-md-4 p-5 form-part">
+            <div className="light1"></div>
+            <div className="light2"></div>
             <SearchForm/>
           </div>
 

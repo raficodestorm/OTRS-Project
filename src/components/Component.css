@@ -1,3 +1,9 @@
+/* =================== google-font-Roboto & Ek-mesirri =================== */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "El Messiri", sans-serif; */
+
+
 /* ------------------User Nav style--------------------- */
 :root{
     --main-color: #ff0000;
@@ -11,10 +17,12 @@
     position: sticky;
 }
 .runstar{
+    font-family: "El Messiri", sans-serif;
     color: var(--main-color);
-    font-size: x-large;
-    font-weight: 700;
-    padding-top: 10px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    display: inline-block;
+    padding-top: 1rem;
 }
 .text-menu{
     color: var(--main-color) !important;
@@ -23,4 +31,19 @@
     background-color: var(--main-color);
     color: var(--bg-color) !important;
     border-radius: 5px;
+}
+
+/* ------------------User user footer--------------------- */
+.Footer{
+    background: #f90f0f;
+}
+@media (max-width: 768px) {
+  .u-footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-sicon{
+    justify-content: center;
+  }
 }

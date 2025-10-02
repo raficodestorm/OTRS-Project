@@ -25,15 +25,15 @@ const UserNavbar = () => {
   };
 
   return (
-    <Navbar expand="lg" sticky="top" style={{ backgroundColor: "#fffef5c9" }} className="shadow-sm ">
+    <Navbar expand="lg" sticky="top" style={{ backgroundColor: "#fffef5c9", padding: "0" }} className="shadow-sm ">
       <Container fluid className="usernavbar">
         {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="text-logo ">
           <img
             src="/assests/image/bus-logo.png" // replace with your logo
             alt="Logo"
-            width="35"
-            height="35"
+            width="68"
+            height="50"
             className="d-inline-block align-top me-2"
           /> <span className="runstar">RunStar</span>
         </Navbar.Brand>

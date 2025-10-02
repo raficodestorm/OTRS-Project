@@ -16,6 +16,8 @@ import PopularRoutes from "./pages/user/PopularRoutes";
 import UserFront from "./pages/user/UserFront";
 import SearchResults from "./pages/user/SearchResults";
 import SeatReservation from "./pages/User/SeatReservation";
+import PaymentPageUser from "./pages/user/PaymentPageUser";
+import TicketPageUser from "./pages/user/TicketPageUser";
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
             </Route> */}
 
             <Route path="/other/loginPage" element={<LoginPage />} />
+            <Route path="/confirmation" element={<TicketPageUser />} />
 
             <Route path="/" element={< Navigate to="/user/UserFront" replace/>} />
             
@@ -38,6 +41,7 @@ function App() {
             <Route path="/" element={<MasterUser/>}>
               <Route path="/results" element={<SearchResults />} />
               <Route path="/SeatReservation" element={<SeatReservation />} />
+              <Route path="/payment" element={<PaymentPageUser />} />
             </Route>
 
             <Route path="/admin/*" element={<MasterAdmin/>}>

@@ -30,7 +30,7 @@ const BusSearch = () => {
       </h5>
       <form onSubmit={handleSubmit}>
         {/* From */}
-        <div className="mb-3">
+        <div className="mb-3 form-in">
           <label className="form-label fw-semibold">From</label>
           <input
             type="text"
@@ -44,7 +44,7 @@ const BusSearch = () => {
         </div>
 
         {/* To */}
-        <div className="mb-3">
+        <div className="mb-3 form-in">
           <label className="form-label fw-semibold">To</label>
           <input
             type="text"
@@ -58,7 +58,7 @@ const BusSearch = () => {
         </div>
 
         {/* Date */}
-        <div className="mb-3">
+        <div className="mb-3 form-in">
           <label className="form-label fw-semibold">Date of Journey</label>
           <input
             type="date"

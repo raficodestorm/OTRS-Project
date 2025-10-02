@@ -17,7 +17,7 @@ const PopularRoutes = () => {
   ];
 
   return (
-    <div className="container my-5">
+    <div className="container my-5 p-routes">
       <h2 className="text-center mb-4 popular-title">Popular Routes</h2>
       <div className="row g-4">
         {routes.map((route, index) => (
