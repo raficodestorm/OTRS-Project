@@ -46,6 +46,17 @@ main{
     align-self: self-start;
     overflow: hidden;
     transition: 0.2s ease-in-out;
+     overflow-y: auto
+}
+svg{
+    font-size: 24px;
+}
+.submenu svg{
+    font-size: 18px;
+}
+.arrow{
+    font-size: 14px;
+    color: gray;
 }
 .sidebar ul{
     list-style: none;
@@ -57,8 +68,10 @@ main{
     margin-bottom: 25px;
 }
 .nav-logo{
+    font-family: "El Messiri", sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    color: var(--main-color);
 }
 .sidebar a, .sidebar .nav-logo{
     border-bottom-right-radius: 1.5rem;
@@ -71,10 +84,30 @@ main{
     text-decoration: none;
     transition: .2s ease-in-out;
 }
+.drop-btn{
+    align-items: center;
+    padding: .85rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    color: var(--text-color);
+    border: none;
+    background: none;
+    width: 100%;
+    display: flex;
+    transition: .2s ease-in-out;
+}
+.drop-btn span{
+    text-align: start;
+    padding-left: .85rem;
+}
 .sidebar a span, .sidebar .dropdown span{
     flex-grow: 1;
 }
 .sidebar a:hover{
+    background-color: var(--main-color);
+    border-left: 3px solid var(--text-color);
+}
+.drop-btn:hover{
     background-color: var(--main-color);
     border-left: 3px solid var(--text-color);
 }
@@ -122,15 +155,19 @@ main{
     padding-left: 22px !important;
 }
 /* ------------- js class end ------------ */
-.sidebar.close a span {
+.sidebar.close a span, .sidebar.close .drop-btn .arrow {
     display: none;
 }
-.sidebar.close a .arrow {
+.sidebar.close .drop-btn span {
     display: none;
 }
-.sidebar.close a {
+
+.sidebar.close .sidebar.close a {
     justify-content: center; 
     gap: 0; 
+}
+.sidebar.close .submenu a{
+    padding-left: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -161,7 +198,7 @@ main{
 
     .sidebar ul li span,
     .sidebar ul li:first-child,
-    .sidebar #drop svg:last-child {
+    .sidebar #drop .arrow {
         display: none;
     }
 
@@ -211,7 +248,7 @@ main{
     .dropdown .submenu.showmenu a:hover{
         background-color: yellow;
     }
-    .dropdown .submenu.showmenu a svg {
+    .dropdown .submenu.showmenu a .arrow {
         display: none;
     }
 
