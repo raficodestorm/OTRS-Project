@@ -47,8 +47,8 @@
   width: .7rem;
   border-radius: 50%;
   background-color: white;
-  bottom: 8.5rem;
-  left: -11.7rem;
+  bottom: 28%;
+  left: -44%;
   animation: light1 .2s ease-in-out infinite;
 }
 .light2{
@@ -57,8 +57,8 @@
   width: .5rem;
   border-radius: 50%;
   background-color: white;
-  bottom: 8.4rem;
-  left: -.5rem;
+  bottom: 28%;
+  left: -1%;
   animation: light2 .2s ease-in-out infinite;
 }
 @keyframes light1{
@@ -173,5 +173,30 @@
   .bus-src {
     font-size: 0.9rem;
     padding: 8px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .light1{
+    bottom: 30%;
+  }
+  .light2{
+    bottom: 30%;
+  }
+}
+@media (max-width: 1160px) {
+  .light1{
+    bottom: 32%;
+  }
+  .light2{
+    bottom: 32%;
+  }
+}
+@media (max-width: 1050px) {
+  .light1{
+    bottom: 34%;
+  }
+  .light2{
+    bottom: 34%;
   }
 }
